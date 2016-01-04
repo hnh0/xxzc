@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS reset */
+*{font-family: "优黑","微软雅黑", "宋体", "Microsoft Yahei", "Pinghei", Arial, Helvetica, sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+fieldset,img {border:0; }
+ol,ul {list-style:none; }
+h1,h2,h3,h4,h5,h6,button,input,select,textarea {font-size:100%;}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0; border:0;}
+table {border-collapse:collapse;border-spacing:0;}
+i, cite, em, var, dfn, address {font-style: normal;}
+body{font:12px "微软雅黑", "宋体",Arial, Helvetica, sans-serif;}
+a{color: #313131;text-decoration: none;}
+a:hover{text-decoration: underline;}
+a:active, a:focus{outline:none}
+a[href^="http://tongji.baidu.com"]{display: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; font-size:0;}
+.clearfix{zoom:1;clear:both;}
+.clear{clear:both; height:0; line-height:0; font-size:0;}
+.hidden,.none{display: none;}
+
+.display-flexbox {
+    display: -webkit-box;   /* 兼容旧的 webkit，Android 2.x */
+    display: -webkit-flex;  /* 标准写法 带 webkit 前缀，兼容标准确立之前的 webkit */
+    display: flex;          /* 标准写法 最新的 webkit, firefox, msie 可以支持 */
+}
+.flexbox-children {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+body{
+	background: #142522 url(../img/bg.jpg) no-repeat center 0;
+}
+header{
+	height: 770px;
+}
+nav{
+	width: 990px;
+	margin: 0 auto;
+	display: block;
+	line-height: 53px;
+	font-size: 20px;
+	padding-top: 102px;
+}
+nav a{
+	float: left;
+	padding: 0 30px;
+	color: #ffdac3;
+	text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+nav .right{
+	float: right;
+}
+.logo{
+	width: 366px;
+	height: 197px;
+	display: block;
+	margin: -80px auto;
+	opacity: .5;
+	text-indent: -99999px;
+}
+.wrap{
+	width: 986px;
+	margin: 0 auto;
+}
+.left{
+	width: 263px;
+	min-height: 842px;
+	background: url(../img/left.png) no-repeat center 100px;
+}
+.download{
+	width: 273px;
+	height: 90px;
+	display: block;
+	margin: 0 0 0 -9px;
+	text-indent: -99999px;
+	background: url(../img/download.png) no-repeat center 0;
+}
+.download:hover{
+	background-position: center bottom;
+}
+.qr_code{
+	width: 215px;
+	height: 215px;
+	display: block;
+	margin: 37px auto 35px;
+}
+.download_item{
+	height: 76px;
+	display: block;
+	text-indent: -99999px;
+}
+.download_item + .download_item{
+	margin: 11px 0 18px 0;
+}
+.block_link{
+	width: 126px;
+	height: 127px;
+	display: inline-block;
+	margin: 0 1px 11px 2px;
+	text-indent: -99999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
