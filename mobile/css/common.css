@@ -48,6 +48,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 /*
 a:link,
 a:visited {
@@ -110,12 +115,58 @@ header{
   height: 222px;
   background: url('../img/bg_header.png') no-repeat;
   background-size: 100% auto;
+  padding-bottom: 21px;
 }
 header .navi{
+  position: relative;
   width: 100%;
   height: 84px;
   background: url('../img/bg_navi.png') no-repeat;
   background-size: 100% auto;
+}
+header .navi .index{
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  width: 36px;
+  height: 11px;
+  background: url('../img/index_in.png') no-repeat;
+  background-size: 36px 11px;
+
+}
+header .navi .game{
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 56px;
+  width: 36px;
+  height: 11px;
+  background: url('../img/index_ga.png') no-repeat 0px 0px;
+  background-size: 36px 11px;
+
+}
+header .navi .down{
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 36px;
+  height: 11px;
+  background: url('../img/index_do.png') no-repeat 0px 0px;
+  background-size: 36px 11px;
+
+}
+header .navi .lun{
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 56px;
+  width: 36px;
+  height: 11px;
+  background: url('../img/index_lu.png') no-repeat 0px 0px;
+  background-size: 36px 11px;
+
 }
 header .img{
   width: 100%;
@@ -125,12 +176,124 @@ header .img{
   position: relative;
   top: -60px;
 }
+header .app_btn{
+  position: absolute;
+  left: 50%;
+  margin-left: -140px;
+  bottom: -10px;
+  display: block;
+  width: 127px;
+  height: 40px;
+  background: url('../img/app_down.png') no-repeat;
+  background-size: 127px 40px;
+}
+header .and_btn{
+  position: absolute;
+  right: 50%;
+  margin-right: -140px;
+  bottom: -10px;
+  display: block;
+  width: 127px;
+  height: 40px;
+  background: url('../img/and_down.png') no-repeat;
+  background-size: 127px 40px;
+}
 footer{
   width: 100%;
-  height: 575px;
+  /*height: 575px;*/
   background: url('../img/bg_footer.png') no-repeat;
   background-size: 100% auto;
 }
+.index_img{
+  position: relative;
+  margin: 0 auto;
+  width: 91%;
+  height: 179px;
+  background: url('../img/index_img.png') no-repeat;
+  /*background-size: 336px 179px;*/
+  background-size: 100% 179px;
+
+}
+.index_img .index_img_txt{
+  padding: 3px 6px;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(0,0,0,.7);
+  color: #fff;
+}
+.index_img .index_img_txt span{display: block;}
+.index_img .index_img_txt .text1{font-size: 8px;padding-top: 3px;}
+.index_navi > div{
+  color: #9f9a98;
+  font-size: 11px;
+  height: 34px;
+  line-height: 34px;
+  background: url('../img/index_nav_n.png');
+  background-size:89px 34px;
+  text-align: center;
+  margin-top: 9px;
+}
+.index_navi > div.active{
+  background: url('../img/index_nav_a.png') no-repeat;
+  background-size:cover 34px;
+}
+.index_add{
+  height: 40px;
+  line-height: 40px;
+  color: #ca3433;
+  background: #070f0f;
+  text-align: center;
+  border-bottom: 1px dashed #fff;
+}
+.index_add a{
+  padding-right: 10px;
+  background: url('../img/sarraw.png') no-repeat right;
+  background-size: 6px 6px;
+
+}
+.index_add_detail{padding: 7px 0;background: rgba(0,0,0,.4);}
+.index_add_detail>a{
+  display: block;
+  max-width: 200px;
+  height: 27px;
+  line-height: 27px;
+  color: #939290;
+  padding-left: 27px;
+  background: url('../img/sarraw.png') no-repeat 17px 10px;
+  background-size: 6px 6px;
+}
+.index_add_detail>a>span{
+  position: absolute;
+  right: 18px;
+  color: #3b3b38;
+}
+
+.index_add_detail .red{color: #d92f16;}
+.guanwei{
+  margin-top: 9px;
+  padding-bottom: 53px;
+}
+.guanwei>div>a{
+  display: block;
+  width: 78px;
+  height: 78px;
+  background: url('../img/index_guan.png') no-repeat;
+  background-size: 343px 80px;
+  margin: 3px auto;
+}
+.guanwei>div>a.item_1{
+  background: url('../img/index_guan.png') no-repeat -87px 0px;
+  background-size: 343px 80px;
+}
+.guanwei>div>a.item_2{
+  background: url('../img/index_guan.png') no-repeat -173px 0px;
+  background-size: 343px 80px;
+}
+.guanwei>div>a.item_3{
+  background: url('../img/index_guan.png') no-repeat -258px 0px;
+  background-size: 343px 80px;
+}
+
 
 
 
