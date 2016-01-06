@@ -68,7 +68,9 @@ nav .right{
 }
 .left{
 	width: 263px;
+	float: left;
 	min-height: 842px;
+	margin-top: 16px;
 	background: url(../img/left.png) no-repeat center 100px;
 }
 .download{
@@ -103,8 +105,40 @@ nav .right{
 	margin: 0 1px 11px 2px;
 	text-indent: -99999px;
 }
+.left_banner{
+	width: 280px;
+	height: 221px;
+	display: block;
+	margin: 10px 0 0 -8px;
+	overflow: hidden;
+	background: url(../img/left_banner_bg.png) no-repeat center center;
+}
+.left_banner img{
+	width: 233px;
+	height: 128px;
+	display: block;
+	border-radius: 6px;
+	margin: 47px auto 0;
+}
 
-
+.right{
+	width: 700px;
+	margin-left: 288px;
+}
+.crumbs{
+	width: 646px;
+	height: 74px;
+	padding: 46px 48px 0;
+	margin: 0 0 0 -21px;
+	text-align: right;
+	color: #aeaeae;
+	font-size: 16px;
+	line-height: 74px;
+	background: url(../img/crumbs.png) no-repeat center 0;
+}
+.crumbs a{
+	color: #aeaeae;
+}
 
 
 
