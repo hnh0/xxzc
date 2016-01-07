@@ -139,6 +139,30 @@ nav .right{
 .crumbs a{
 	color: #aeaeae;
 }
+.pgn{
+	line-height: 27px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 0 #000;
+	padding: 16px 0;
+}
+.pgn *{
+	display: inline-block;
+	border: 1px solid #121716;
+	background: #39393c url(../img/pgn_bg.jpg) repeat-x 0 0;
+	background: linear-gradient(#434345, #2c2c2e);
+	padding: 0 10px;
+	color: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 1px 0 #5a5b5c inset;
+}
+.pgn span,
+.pgn a:hover{
+	background: #222223;
+	box-shadow: 0 0 3px #151717 inset;
+	border-color: #151717;
+	text-decoration: none;
+}
 
 
 
