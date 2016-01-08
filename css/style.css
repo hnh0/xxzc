@@ -51,7 +51,7 @@ nav a{
 	color: #ffdac3;
 	text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
-nav .right{
+nav .nav_right{
 	float: right;
 }
 .logo{
@@ -138,6 +138,84 @@ nav .right{
 }
 .crumbs a{
 	color: #aeaeae;
+}
+.crumbs_title{
+	display: block;
+	float: left;
+	margin: 20px 0 0;
+}
+.tabs{
+	width: 698px;
+	height: 57px;
+	overflow: hidden;
+	margin: 7px auto 0;
+	background: url(../img/tab_bg.png) no-repeat 0 0;
+}
+.tabs a{
+	width: 25%;
+	height: 57px;
+	line-height: 57px;
+	display: block;
+	text-align: center;
+	color: #9f9b98;
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	box-shadow: 1px 0 0 #000 inset;
+}
+.tabs a:hover,
+.tabs a.current{
+	color: #fff2ea;
+	text-decoration: none;
+	background: url(../img/tab_current.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+.box{
+	width: 708px;
+	padding-top: 80px;
+	margin: 0 -4px;
+	background: url(../img/box_head.png) no-repeat center 0;
+}
+.box_foot{
+	padding-bottom: 36px;
+	background: url(../img/box_foot.png) no-repeat center bottom;
+}
+.box_core{
+	padding: 0 40px;
+	background: url(../img/box_bg.png) repeat-y center 0;
+}
+.box_core.no_padding{
+	padding: 0 17px;
+}
+.box_real{
+	width: 100%;
+	float: right;
+	margin: -50px 0 -16px;
+	color: #fff;
+	font-size: 14px;
+}
+.box .clear{
+	clear: right;
+}
+.role{
+
+}
+.role_left{
+	width: 214px;
+	float: left;
+}
+.role_left img{
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.role_right{
+	padding-right: 26px;
+	margin-left: 214px;
+}
+.role_right h2{
+	
 }
 .pgn{
 	line-height: 27px;
