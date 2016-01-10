@@ -10,6 +10,23 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="email=no"/>
     <link rel="stylesheet" href="./css/common.css" media="all">
+    <link rel="stylesheet" href="./css/swipe.css" media="all">
+    <style>
+        .swipe {
+            overflow: hidden;
+            visibility: hidden;
+            position: relative;
+        }
+        .swipe-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+        .swipe-wrap > figure {
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -27,13 +44,37 @@
 </header>
 
 <footer>
-    <div class="main">
-        <div class="index_img">
-            <div class="index_img_txt">
-                <span>简介简介简介简介</span>
-                <span class="text1">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</span>
+    <div class="main index-main">
+        <div id="slider" class="swipe">
+            <div class="swipe-wrap">
+                <figure>
+                    <div class="index_img">
+                        <div class="index_img_txt">
+                            <span>11111</span>
+                            <span class="text1">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</span>
+                        </div>
+                    </div>
+                </figure>
+                <figure>
+                    <div class="index_img">
+                        <div class="index_img_txt">
+                            <span>22222</span>
+                            <span class="text1">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</span>
+                        </div>
+                    </div>
+                </figure>
+                <figure>
+                    <div class="index_img">
+                        <div class="index_img_txt">
+                            <span>简介简介简介简介</span>
+                            <span class="text1">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</span>
+                        </div>
+                    </div>
+                </figure>
             </div>
+
         </div>
+        
         <div class="display-flexbox index_navi">
             <a class="flexbox-children">最新</a>
             <a class="active flexbox-children">新闻</a>
@@ -41,16 +82,19 @@
             <a class="flexbox-children">活动</a>
 
         </div>
-        <div class="index_add"><a>双线28服【试炼之地】8月6日10:00火爆开启</a></div>
-        <div class="index_add_detail">
-            <a class="text-overflow">[新闻]《女神联盟》种族对抗终爆发 狼人族表示步步为营《女神联盟》诸神之战抢先看 
-            <span>04-07</span></a>
-            <a class="text-overflow">[新闻]《女神联盟》种族对抗终爆发 狼人族表示步步为营《女神联盟》诸神之战抢先看
-            <span>04-07</span></a>
-            <a class="text-overflow red">[新闻]《女神联盟》种族对抗终爆发 狼人族表示步步为营《女神联盟》诸神之战抢先看
-            <span>04-07</span></a>
+        <div class="J_tab">
+            <div class="index_add"><a>双线28服【试炼之地】8月6日10:00火爆开启</a></div>
+            <div class="index_add_detail">
+                <a class="text-overflow">[新闻]《女神联盟》种族对抗终爆发 狼人族表示步步为营《女神联盟》诸神之战抢先看 
+                <span>04-07</span></a>
+                <a class="text-overflow">[新闻]《女神联盟》种族对抗终爆发 狼人族表示步步为营《女神联盟》诸神之战抢先看
+                <span>04-07</span></a>
+                <a class="text-overflow red">[新闻]《女神联盟》种族对抗终爆发 狼人族表示步步为营《女神联盟》诸神之战抢先看
+                <span>04-07</span></a>
 
+            </div>
         </div>
+        
         <div class="guanwei display-flexbox">
             <div class="flexbox-children"><a class="item_0"></a></div>
             <div class="flexbox-children"><a class="item_1"></a></div>
@@ -62,6 +106,26 @@
 
 <script type="application/javascript" src="./js/zepto.js"></script>
 <script type="application/javascript" src="./js/fastclick.js"></script>
-<!-- <script type="application/javascript" src="./js/main.js"></script> -->
+<script type="application/javascript" src="./js/main.js"></script>
+<script type="application/javascript" src="./js/swipe.js"></script>
+
+<script>
+var slider =
+  Swipe(document.getElementById('slider'), {
+    auto: 3000,
+    continuous: true,
+    callback: function(pos) {
+
+      // var i = bullets.length;
+      // while (i--) {
+      //   bullets[i].className = ' ';
+      // }
+      // bullets[pos].className = 'on';
+
+    }
+  });
+// var bullets = document.getElementById('position').getElementsByTagName('li');
+</script>
+
 </body>
 </html>
