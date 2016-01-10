@@ -364,9 +364,10 @@ footer{
   
 }
 .news_news_core_box{
+  width: 100%;
   margin-top: -25px;
   margin-bottom: -8px;
-
+  float: left;
 }
 @media screen and (min-width: 321px){
   .news_news{
