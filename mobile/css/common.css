@@ -346,16 +346,20 @@ footer{
   .news_news_footer{
     margin: 0 auto;
     width: 302px;
-    padding-bottom: 14px;
+    padding-bottom: 18px;
     background: url(../img/box_foot.png) no-repeat center bottom;
     background-size: 100% 18px;
   }
   .news_news_core{
-    margin-top: -28px;
     padding: 0 10px;
     background: url(../img/box_bg.png) repeat-y center 0;
     background-size: 100% 38px;
   }
+  
+}
+.news_news_core_box{
+  margin-top: -25px;
+  margin-bottom: -8px;
 
 }
 @media screen and (min-width: 321px){
@@ -370,12 +374,11 @@ footer{
   .news_news_footer{
     margin: 0 auto;
     width: 352px;
-    padding-bottom: 14px;
+    padding-bottom: 18px;
     background: url(../img/box_foot.png) no-repeat center bottom;
     background-size: 100% 18px;
   }
   .news_news_core{
-    margin-top: -28px;
     padding: 0 10px;
     background: url(../img/box_bg.png) repeat-y center 0;
     background-size: 100% 38px;
