@@ -365,7 +365,7 @@ footer{
 }
 .news_news_core_box{
   width: 100%;
-  margin-top: -25px;
+  margin-top: -29px;
   margin-bottom: -8px;
   float: left;
 }
@@ -463,7 +463,8 @@ footer{
   padding: 5px 0;
 }
 /*下载*/
-.news_download{padding: 11px 15px;color: #fff;position: relative;top: -40px;}
+.download_mar{margin-left: 4px;margin-top: 8px;}
+.news_download{color: #fff;}
 .news_download0{margin-top: 10px;}
 .download_1{
   float: left;
