@@ -239,6 +239,12 @@ footer{
   text-align: center;
   margin-top: 9px;
 }
+.tabs_item{
+  display: none;
+}
+.tabs_item.show{
+  display: block;
+}
 .index_navi > a.active{
   background: url('../img/index_nav_a.png') no-repeat;
   background-size:cover 34px;
